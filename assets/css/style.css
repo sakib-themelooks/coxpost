@@ -1202,7 +1202,7 @@ img {
   left: 100px;
   top: 70%;
   transform: translateY(-70%);
-  width: 300%;
+  width: 400%;
 }
 @media (max-width: 767px) {
   #page-header .main .center-text {
@@ -4130,6 +4130,7 @@ footer .footer-bottom .main .social-links ul li a:hover:before {
 
 #sell-online-part {
   padding-block: 120px;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   #sell-online-part {
@@ -4663,7 +4664,6 @@ footer .footer-bottom .main .social-links ul li a:hover:before {
 
 #main-details {
   padding-block: 60px;
-  background: #f5f5f5;
 }
 #main-details .warning {
   background: #fa461c;
