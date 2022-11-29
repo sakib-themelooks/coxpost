@@ -1,0 +1,72 @@
+/* Reply Automation Part */
+
+#reply-automation-part {
+  background: rgba(22, 107, 255, 0.05);
+  padding-top: 110px;
+  padding-bottom: 180px;
+  @media (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+  .reply-card-group {
+    margin-top: 50px;
+    .cc {
+      .card {
+        border: none;
+        padding: 45px 30px;
+        border-radius: 20px;
+        .top {
+          gap: 20px;
+          h3 {
+            font-size: 21px;
+            line-height: 34px;
+            letter-spacing: -0.02em;
+            font-weight: $medium;
+          }
+        }
+      }
+      &:first-child {
+        .top {
+          img {
+            filter: drop-shadow(0px 10px 20px rgba(91, 255, 69, 0.45));
+          }
+        }
+      }
+      &:nth-child(2) {
+        .top {
+          img {
+            filter: drop-shadow(0px 10px 20px rgba(255, 81, 81, 0.45));
+          }
+        }
+      }
+      &:nth-child(3) {
+        .top {
+          img {
+            filter: drop-shadow(0px 10px 20px rgba(255, 218, 50, 0.45));
+          }
+        }
+      }
+      &:nth-child(4) {
+        .top {
+          img {
+            filter: drop-shadow(0px 10px 20px rgba(215, 20, 0, 0.45));
+          }
+        }
+      }
+      &:nth-child(5) {
+        .top {
+          img {
+            filter: drop-shadow(0px 10px 20px rgba(23, 117, 255, 0.45));
+          }
+        }
+      }
+      &:nth-child(6) {
+        .top {
+          img {
+            filter: drop-shadow(0px 10px 20px rgba(255, 128, 51, 0.45));
+          }
+        }
+      }
+    }
+  }
+}

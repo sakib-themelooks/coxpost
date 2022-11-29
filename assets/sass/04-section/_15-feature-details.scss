@@ -1,0 +1,33 @@
+#feature-details {
+  padding-block: 60px;
+  @media (max-width: 767px) {
+    padding-block: 60px;
+  }
+  .details-section {
+    margin-top: 60px;
+
+    h4 {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    ul {
+      li {
+        color: var(--title-color);
+        padding-block: 7px;
+        &.available{
+          &::after{
+            top: 9px;
+          }
+        }
+      }
+    }
+
+    .bottom-text {
+      margin-top: 15px;
+      line-height: 26px;
+    }
+  }
+  .para-text {
+    line-height: 26px;
+  }
+}

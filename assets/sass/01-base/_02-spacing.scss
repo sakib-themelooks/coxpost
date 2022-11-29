@@ -1,0 +1,70 @@
+/* ************************
+   01.2: Padding/Margin
+   ********************* */
+// Paddings
+$p-list: 120, 90, 80, 70, 50, 40;
+$tab: 60;
+
+// Padding Top
+@each $padding in $p-list {
+    .pt-#{$padding} {
+        padding-top: $padding + px;
+        @include tab{
+            @if $padding > $tab {
+                padding-top: ($padding - $tab) + px;
+            } @else {
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+// Padding Bottom
+@each $padding in $p-list {
+    .pb-#{$padding} {
+        padding-bottom: $padding + px;
+        @include tab{
+            @if $padding > $tab {
+                padding-bottom: ($padding - $tab) + px;
+            } @else {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+
+$m-list: 60, 50, 40, 30;
+
+// Margin Top
+@each $margin in $m-list {
+    .mt-#{$margin} {
+        margin-top: $margin + px;
+    }
+}
+// Margin Bottom
+@each $margin in $m-list {
+    .mb-#{$margin} {
+        margin-bottom: $margin + px;
+    }
+}
+
+// Custom Class
+.mr-10 {
+    margin-right: 10px !important;
+}
+.ml-10 {
+    margin-left: 10px !important;
+}
+.gy-10{
+    gap: 10px 0;
+}
+.gy-30{
+    gap: 30px 0;
+}
+.gy-60{
+    gap: 60px 0;
+}
+.gy-24{
+    gap: 24px 0;
+}

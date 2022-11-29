@@ -1,0 +1,45 @@
+/* List Style */
+.list-style {
+   margin-top: 15px;
+   li {
+     padding-left: 25px;
+     line-height: 28px;
+     font-family: var(--body-font);
+     color: var(--text-color);
+     padding-block: 13px;
+     &.available {
+       position: relative;
+       &::after {
+         content: url(../img/icon/available.png);
+         position: absolute;
+         top: 14px;
+         left: 0px;
+         filter: drop-shadow(
+           3px 3px 10px rgba(22, 106, 255, 0.45)
+         );
+       }
+     }
+     &.not-available {
+       position: relative;
+       &::after {
+         content: url(../img/icon/not-available.png);
+         position: absolute;
+         top: 15px;
+         left: 0px;
+         filter: drop-shadow(0px 3px 10px rgba(255, 0, 0, 0.45));
+       }
+     }
+     &.lifetime {
+       position: relative;
+       &::after {
+         content: url(../img/icon/lifetime.png);
+         position: absolute;
+         top: 14px;
+         left: 0px;
+         filter: drop-shadow(
+           0px 3px 10px rgba(46, 208, 250, 0.45)
+         );
+       }
+     }
+   }
+ }

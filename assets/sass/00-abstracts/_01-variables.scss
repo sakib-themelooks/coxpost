@@ -1,0 +1,43 @@
+:root {
+    --c1: #24A5FC;
+    --c2: #2ED0FA;
+    --c3: #FFD824;
+    --title-color: #0C2041;
+    --text-color: #8F8F8F;
+    --border-color: #EAEAEA;
+    --white: #ffffff;
+    --black: #000000;
+    --body-bg: #ffffff;
+
+    --title-font: 'Poppins', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+
+// Fonts
+$title_font: 'Poppins', sans-serif;
+$body_font: 'Roboto', sans-serif;
+
+// Font Weight
+$thin: 100;
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black-bold: 900;
+
+// Font Size
+$base-font-size: 16px;
+$h1_font_size: 60px;
+$h2_font_size: 36px;
+$h3_font_size: 30px;
+$h4_font_size: 24px;
+$h5_font_size: 18px;
+$h6_font_size: 13px;
+
+// Line Height
+$base-line-height: calc(28 / 16);
+$title-line-height: calc(82 / 72);

@@ -1,0 +1,123 @@
+/* Schedule Post Part */
+
+#schedule-post {
+  padding-top: 110px;
+  background: rgba(20, 106, 255, 0.05);
+  @media (max-width: 767px) {
+    padding-top: 60px;
+  }
+  .post-slider {
+    margin-top: 105px;
+    position: relative;
+    border-radius: 30px;
+    @media (max-width: 575px) {
+      margin-top: 60px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      left: 30px;
+      right: 30px;
+      height: 50%;
+      background: var(--white);
+      border-radius: 20px;
+      box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+      z-index: -1;
+      @media (max-width: 575px) {
+        left: 15px;
+        right: 15px;
+        top: -15px;
+      }
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: -60px;
+      left: 60px;
+      right: 60px;
+      height: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+      z-index: -2;
+      @media (max-width: 575px) {
+        left: 30px;
+        right: 30px;
+        top: -30px;
+      }
+    }
+    .slider-item {
+      border-radius: 25px;
+      overflow: hidden;
+    }
+  }
+  .social-media {
+    margin-top: 110px;
+    @media (max-width: 767px) {
+      margin-top: 50px;
+    }
+    h3 {
+      font-size: 48px;
+      line-height: 58px;
+      @extend %medium;
+      @media (max-width: 767px) {
+        font-size: 28px;
+        line-height: 38px;
+      }
+    }
+    .social-icon {
+      padding-top: 47px;
+      padding-bottom: 120px;
+      @media (max-width: 767px) {
+        padding-top: 22px;
+        padding-bottom: 60px;
+      }
+      @media (max-width: 575px) {
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .icon {
+        margin-inline: -10px;
+        filter: drop-shadow(0px 10px 20px rgba(22, 106, 255, 0.45));
+        transition: 0.6s;
+        @media (max-width: 575px) {
+          margin-inline: 0px;
+          max-width: 45px;
+        }
+      }
+      &:hover {
+        .icon {
+          margin-inline: 5px;
+          &:nth-child(odd) {
+            animation: rotateRight 1s;
+            @keyframes rotateRight {
+              0% {
+                transform: rotate(0);
+              }
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+          }
+          &:nth-child(even) {
+            animation: rotateleft 1s;
+            @keyframes rotateleft {
+              0% {
+                transform: rotate(0);
+              }
+              100% {
+                transform: rotate(-360deg);
+              }
+            }
+          }
+          @media (max-width: 575px){
+            margin-inline: 0;
+            animation: none;
+          }
+        }
+      }
+    }
+  }
+}

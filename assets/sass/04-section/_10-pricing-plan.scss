@@ -1,0 +1,161 @@
+/* Pricing Plan Part */
+#pricing-plan-part {
+  padding-top: 110px;
+  @media (max-width: 767px) {
+    padding-top: 60px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background: rgba(22, 107, 255, 0.05);
+    z-index: -1;
+  }
+  .plan-main {
+    .nav {
+      border: none;
+      justify-content: center;
+      margin-top: 30px;
+      .btn-group {
+        padding: 10px;
+        background: var(--white);
+        border-radius: 60px;
+        .nav-item {
+          .nav-link {
+            border: none;
+            padding: 8px 25px;
+            border-radius: 30px;
+            color: var(--c1);
+            font-size: 18px;
+            font-weight: $medium;
+            @media (max-width: 360px) {
+              padding: 8px 18px;
+            }
+            &.active {
+              background: linear-gradient(104.04deg, #166aff 0%, #2ed0fa 100%);
+              color: var(--white);
+            }
+          }
+        }
+      }
+    }
+    .tab-content {
+      margin-top: 60px;
+      box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      background: var(--white);
+      .plan-details {
+        padding-bottom: 50px;
+        .item {
+          .top {
+            padding: 60px 75px;
+            position: relative;
+            @media (max-width: 991px) {
+              padding: 30px;
+            }
+            h5 {
+              @extend %body-font;
+              font-size: 18px;
+              line-height: 21px;
+              font-weight: $semi-bold;
+              color: var(--c2);
+            }
+            h3 {
+              font-size: 56px;
+              line-height: 56px;
+              font-weight: $semi-bold;
+              letter-spacing: -0.05em;
+              color: var(--c1);
+              margin-top: 8px;
+              @media (max-width: 767px) {
+                font-size: 40px;
+              }
+            }
+            p {
+              line-height: 19px;
+              @extend %body-font;
+              margin-top: 13px;
+            }
+            a {
+              padding-inline: 25px;
+              height: 42px;
+              background: var(--title-color);
+              border-radius: 30px;
+              line-height: 42px;
+              display: inline-block;
+              color: var(--white);
+              letter-spacing: -0.05em;
+              font-size: 14px;
+              margin-top: 30px;
+              transition: 0.4s;
+              &:hover {
+                background: linear-gradient(
+                  148.23deg,
+                  #166aff 10.52%,
+                  #2ed0fa 89.38%
+                );
+              }
+              
+              img {
+                margin-right: 7px;
+              }
+            }
+            &.br {
+              &:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                width: 1px;
+                height: 200px;
+                background: linear-gradient(
+                  rgba(233, 233, 233, 0) 0%,
+                  #e9e9e9 8.13%,
+                  #e9e9e9 91.87%,
+                  rgba(233, 233, 233, 0) 100%
+                );
+                @media (max-width: 767px) {
+                  display: none;
+                }
+              }
+            }
+          }
+          .plan-details-list {
+            border-top: 1px solid #e9f1ff;
+            padding: 45px;
+            display: none;
+            .list-block {
+              margin-bottom: 40px;
+              h3 {
+                font-size: 18px;
+                line-height: 27px;
+                font-weight: $medium;
+                letter-spacing: -0.03em;
+              }
+              
+            }
+          }
+        }
+      }
+      .plan-collaps-btn {
+        h2 {
+          font-size: 21px;
+          line-height: 32px;
+          letter-spacing: -0.03em;
+          color: var(--c1);
+          cursor: pointer;
+          &.toggleOff {
+            display: block;
+          }
+          &.toggleOn {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

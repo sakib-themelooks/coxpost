@@ -1,0 +1,178 @@
+/* Email Marketing Part */
+
+#email-marketing-part {
+  background: rgba(22, 107, 255, 0.05);
+  padding-top: 110px;
+  @media (max-width: 767px) {
+    padding-top: 60px;
+  }
+  .marketing {
+    .card-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      border-radius: 20px;
+      margin-top: 50px;
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+      .card {
+        text-align: center;
+        border: none;
+        background: transparent;
+        padding: 70px 80px;
+        position: relative;
+        @media (max-width: 1200px) {
+          padding: 30px;
+        }
+
+        .img {
+          min-height: 200px;
+          display: flex;
+          justify-content: center;
+        }
+        h5 {
+          margin-top: 40px;
+          font-size: 24px;
+          font-weight: $medium;
+          letter-spacing: -0.01em;
+          @media (max-width: 991px) {
+            font-size: 18px;
+          }
+        }
+        &:not(:last-child) {
+          &::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 140px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: linear-gradient(
+              180deg,
+              rgba(217, 217, 217, 0) 0%,
+              #eaeaea 17.63%,
+              #eaeaea 82.15%,
+              rgba(217, 217, 217, 0) 100%
+            );
+            @media (max-width: 767px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .email-broadcast {
+    margin-top: 45px;
+    .email-card-group {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 30px;
+      @media (max-width: 1400px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @media (max-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 575px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .card-item {
+        background: linear-gradient(
+          180deg,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        border-radius: 20px;
+        text-align: center;
+        padding: 35px 25px;
+        h4 {
+          font-size: 18px;
+          font-weight: $medium;
+          letter-spacing: -0.01em;
+          line-height: 28px;
+          margin-top: 18px;
+          @media (max-width: 1200px) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .email-integration {
+    margin-top: 110px;
+    padding-bottom: 180px;
+    @media (max-width: 767px) {
+      margin-top: 60px;
+      padding-bottom: 120px;
+    }
+    .section-title {
+      max-width: unset !important;
+      p {
+        max-width: 630px;
+      }
+    }
+    .logo-group {
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px 0;
+      @media (max-width: 1400px) {
+        gap: 60px 30px;
+      }
+      @media (max-width: 767px) {
+        gap: 30px;
+      }
+      .img {
+        flex: 0 0 calc(25% - 30px);
+        @media (max-width: 1200px) {
+          flex: unset;
+        }
+        @media (max-width: 767px) {
+          width: calc(50% - 30px);
+        }
+      }
+    }
+  }
+  .email-template {
+    background: white;
+    .card-group {
+      gap: 150px;
+      @media (max-width: 767px) {
+        gap: 45px;
+      }
+      .card-item {
+        @media (max-width: 767px) {
+          padding: 0 30px;
+        }
+        p {
+          text-align: center;
+          font-size: 24px;
+          line-height: 34px;
+          letter-spacing: -0.01em;
+          font-weight: $medium;
+          margin-top: 38px;
+          @media (max-width: 1200px) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    padding-bottom: 110px;
+    @media (max-width: 767px) {
+      padding-bottom: 60px;
+    }
+  }
+}
